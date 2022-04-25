@@ -69,7 +69,6 @@ const SearchBooks = (props) => {
 
     try {
       bookToSave.description = bookToSave.description ? bookToSave.description : ""
-      console.log(bookToSave)
       const response = await saveBook({variables: bookToSave, context: {
         headers: {
           "Authorization":`Bearer ${token}`
