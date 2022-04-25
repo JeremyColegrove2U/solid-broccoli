@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: 'https://book-saver-2u.herokuapp.com/graphql',
 });
 
 const client = new ApolloClient({
